@@ -1,0 +1,453 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color and font for the entire page */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the navbar */
+.navbar {
+  background-color: #02042b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.icon img {
+  max-width: 100px;
+  height: auto;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu ul li a:hover {
+  text-decoration: none;
+  color: #F08D21;
+}
+/* Style the search bar */
+.search input.srch {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search button.btn {
+  background-color: #F08D21;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Style the hero section */
+.hero-content {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding: 100px 0;
+  background-image: url('cover.png'); /* Replace with your background image */
+  background-size: cover;
+  /* color: #0e0d0d; */
+}
+
+.hero-content h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-top: 200px;
+  color: #0e0d0d;
+}
+
+.hero-description {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.join-button a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ea7916;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.join-button {
+  background-color: #ea7916;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: #ea7916;
+}
+
+/* Style the form */
+.form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button.btnn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form p.link {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.form p.link a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.form p.liw {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Style the About section */
+.about-section {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: left;
+  height: 500px;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: -30px;
+  color: #ea7916;
+}
+.details p{
+  float: right;
+  margin-right: 230px;
+  justify-content: space-between;
+  
+}
+.details img{
+width: 590px;
+height: 400px;
+border-radius: 5px;
+float: left;
+margin: 20px;
+margin-top: -80px;
+}
+
+/* Style the Products section */
+.products-section {
+  background-color: #f0f0f0;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.products-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ea7916;
+}
+
+.prod-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery {
+  margin: 20px;
+}
+
+.gallery a {
+  text-decoration: none;
+}
+
+.gallery img {
+  max-width: 80%;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Style the Contact section */
+.contact-section {
+  background-color: #f9f8f8;
+  padding: 100px 0;
+}
+
+.contact-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  color: #ea7916;
+  
+}
+
+.contact-left {
+  text-align: left; 
+  flex: 1; 
+}
+
+.contact-right {
+  text-align: right; 
+  flex: 1; 
+}
+
+.contact-left p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.contact-left p i {
+  margin-right: 15px;
+  color: rgb(135, 133, 129);
+  margin-left: 40px;
+}
+
+.contact-left .social-icons {
+  margin-top: 20px;
+}
+
+.contact-left .social-icons a {
+  text-decoration: none;
+  color: #0b65cd;
+  font-size: 24px;
+  /* margin-right: 20px; */
+  padding: 5px;
+  margin-left: 40px;
+}
+
+.contact-right form {
+  text-align: right;
+  /* background-color: #1e1d1d; */
+  float: right;
+  margin-right: 780px;
+  height: 250px;
+  width: 350px;
+  margin-top: -200px;
+}
+
+.contact-right input[type="text"],
+.contact-right input[type="email"],
+.contact-right textarea {
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 2px solid #F08D21;
+  border-radius: 5px;
+  /* align-items: ; */
+}
+
+.contact-right .btn2 {
+  background-color: #F08D21;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #050505;
+  color: #F08D21;
+  padding: 20px 0;
+  text-align: center;
+  /* margin-left: 110px; */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: block;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 50;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu ul {
+    margin-top: 10px;
+  }
+
+  .menu ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .search {
+    margin-top: 20px;
+  }
+
+  .search input.srch {
+    width: 100%;
+  }
+
+  .search button.btn {
+    margin-top: 10px;
+  }
+
+  .hero-content {
+    padding: 80px 0;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .join-button a {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  .form h3 {
+    font-size: 20px;
+  }
+
+  .form input[type="email"],
+  .form input[type="password"] {
+    font-size: 16px;
+  }
+
+  .form button.btnn {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  .form p.link {
+    font-size: 14px;
+  }
+
+  .form p.liw {
+    font-size: 14px;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .products-content h2 {
+    font-size: 28px;
+  }
+
+  .gallery {
+    margin: 10px;
+  }
+
+  .gallery img {
+    max-width: 100%;
+  }
+
+  .price {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  .contact-content h2 {
+    font-size: 28px;
+  }
+
+  .contact-left p {
+    font-size: 16px;
+  }
+
+  .contact-left .social-icons a {
+    font-size: 20px;
+  }
+
+  .contact-right input[type="text"],
+  .contact-right input[type="email"],
+  .contact-right textarea {
+    font-size: 16px;
+  }
+
+  .contact-right .btn2 {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 6px;
+  }
+
+  .footer-col ul li a {
+    font-size: 14px;
+  }
+}

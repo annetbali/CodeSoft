@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/203ef55cb0.js" crossorigin="anonymous"></script>
+  <title>Your Landing Page</title>
+</head>
+<body>
+  <!-- Main content section -->
+  <main>
+    <div class="navbar">
+      <div class="icon">
+        <img src="log.png" alt="Logo">
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input class="srch" type="search" name="" placeholder="Type Text">
+        <button class="btn">Search</button>
+      </div>
+    </div>
+  
+    <!-- Hero section -->
+    <div class="hero-content" id="home">
+      <h2>Welcome to Star Works Furniture</h2>
+      <p class="hero-description">We Believe in Simplicity for Productivity.</p>
+      <button class="join-button"><a href="#"><strong>JOIN US</strong></a></button>
+    </div>
+  </main>
+
+  <!-- About section -->
+  <section class="about-section" id="about">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <div class="details">
+        <p>
+          At Star Works Furniture we provide turnkey solution for Office Space Planning,<br>
+          Designing and Implementation. We specialize in designing wooden Furniture,<br>
+          Wardrobes, Decorative Shelves and Office Chairs.<br>
+          <br>
+          Star Works Furniture has succeeded for many years in providing bespoke services<br>
+          to clients both corporate and residential in beautifying and optimizing their space.<br> 
+          <br>
+          With the courage to innovate, Star Works Furniture creates trends and unique furnishing<br> 
+          collections being affordable and desirable for all people. Our highly skilled designers<br> 
+          and artisans ensure unique and dazzling looks that are sure to impress!
+        </p>
+          <img src="about.jpg" alt="Product 2" width="600" height="400">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products section -->
+  <section class="products-section" id="products">
+    <div class="products-content">
+      <h2>Products</h2>
+      <!-- Add your Products content here -->
+      <div class="prod-container">
+        <!-- Product 1 -->
+        <div class="gallery">
+          <a target="_blank" href="product1.jpg">
+            <img src="product1.jpg" alt="Product 1" width="600" height="400">
+          </a>
+          <div class="price">Price: $120</div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="gallery">
+          <a target="_blank" href="product2.jpg">
+            <img src="product2.jpg" alt="Product 2" width="600" height="400">
+          </a>
+          <div class="price">Price: $250</div>
+        </div>
+        <!-- Product 3 -->
+        <div class="gallery">
+          <a target="_blank" href="product3.jpg">
+            <img src="product3.jpg" alt="Product 1" width="600" height="400">
+          </a>
+          <div class="price">Price: $120</div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="gallery">
+          <a target="_blank" href="download.jpg">
+            <img src="download.jpg" alt="Product 2" width="600" height="400">
+          </a>
+          <div class="price">Price: $250</div>
+        </div>
+        <!-- Add more products here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-left">
+          <h2 class="sub-title">Contact Us</h2>
+          <p><i class="fa-solid fa-envelope"></i>annetbalinabyo@gmail.com</p>
+          <p><i class="fa-solid fa-mobile"></i>+256 706330027</p>
+          <p><i class="fa-solid fa-phone"></i>+256 761764647</p>
+          <div class="social-icons">
+            <a href="https://Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form id="contact-form">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Submit" class="btn btn2">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section  -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">IT Support</a></li>
+          <li><a href="#">Mobile</a></li>
+          <li><a href="#">Computer Repair</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>@ Copyright All Rights Reserved</p>
+  </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const contactForm = document.getElementById("contact-form");
+  
+      contactForm.addEventListener("submit", function (e) {
+        let valid = true;
+  
+        const nameInput = contactForm.querySelector('input[name="Name"]');
+        const emailInput = contactForm.querySelector('input[name="Email"]');
+        const messageInput = contactForm.querySelector('textarea[name="Message"]');
+  
+        // Custom validation for Name (non-empty)
+        if (!nameInput.value.trim()) {
+          valid = false;
+          nameInput.setCustomValidity("Name is required");
+        } else {
+          nameInput.setCustomValidity("");
+        }
+  
+        // Custom validation for Email (valid format)
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailInput.value)) {
+          valid = false;
+          emailInput.setCustomValidity("Enter a valid email address");
+        } else {
+          emailInput.setCustomValidity("");
+        }
+  
+        // Custom validation for Message (non-empty)
+        if (!messageInput.value.trim()) {
+          valid = false;
+          messageInput.setCustomValidity("Message is required");
+        } else {
+          messageInput.setCustomValidity("");
+        }
+  
+        if (!valid) {
+          e.preventDefault(); // Prevent form submission if validation fails
+        }
+      });
+    });
+  </script>
+  
+</body>
+</html>
