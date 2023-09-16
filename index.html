@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Basic Calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <div class="buttons">
+        <table>
+            <tr>  
+                <td><button id="clear">C</button></td>
+                <td><button id="equals">=</button></td>
+                <td><button id="bracketOpen">(</button></td>
+                <td><button id="bracketClose">)</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" id="num7">7</button></td>
+                <td><button class="number" id="num8">8</button></td>
+                <td><button class="number" id="num9">9</button></td>
+                <td><button class="operator" id="subtract">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" id="num4">4</button></td>
+                <td><button class="number" id="num5">5</button></td>
+                <td><button class="number" id="num6">6</button></td>
+                <td><button class="operator" id="add">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" id="num1">1</button></td>
+                <td><button class="number" id="num2">2</button></td>
+                <td><button class="number" id="num3">3</button></td>
+                <td><button class="operator" id="multiply">*</button></td>
+            </tr>
+            <tr>
+              <td><button class="number" id="num0">0</button></td>
+              <td><button class="operator" id="decimal">.</button></td>
+              <td><button class="operator" id="modulus">%</button></td>
+              <td><button class="operator" id="divide">/</button></td>
+            </tr>
+        </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
